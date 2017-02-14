@@ -2,15 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+	margin:  0;
+}
 body.pages.superman {
-		margin: 0;
+	margin: 0;
 	background: url("<%= asset_path 'Superman.jpg' %>");
 	background-size: 100%;
 }
 body.pages.batman {
-		margin: 0;
+	margin: 0;
 	background: url("<%= asset_path 'Batman.jpg' %>");
 	background-size: 100%;
+}
+div.superman
+{
+	background-image: url("<%= asset_path 'Superman.jpg' %>");
+	width: 100%;
+	height: 100%;
+	display:inline-block;
+	float: left;
+}
+div.batman
+{
+	display:inline;
+	background-image: url("<%= asset_path 'Batman.jpg' %>");
+	width: 100%;
+	height: 100%;
+	float:  left;
 }
 p,h1{
 	color: white;
