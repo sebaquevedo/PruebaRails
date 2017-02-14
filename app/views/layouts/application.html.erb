@@ -5,22 +5,11 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <style>
-    	body{
-			background: url(<%= asset_path 'Batman.jpg' %>);
-			background-size: 100%
-		}
-		p,h1{
-			color: white;
-			font-family: sans-serif;
-			font-size: 100px;
-			text-align: center;
-		}
-    </style>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="<%= params[:controller]%> <%= params[:action] %>">
     <%= yield %>
   </body>
 </html>
